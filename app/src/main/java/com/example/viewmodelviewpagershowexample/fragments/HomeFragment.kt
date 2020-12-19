@@ -46,7 +46,7 @@ class HomeFragment():Fragment()
     private fun initViewPager2()
     {
         viewPager2 = rootView.findViewById(R.id.viewpager2)
-        adapter = ViewPager2Adapter(parentFragmentManager,lifecycle)
+        adapter = ViewPager2Adapter(childFragmentManager,lifecycle)
         viewPager2.adapter = adapter
 
         // TabLayout:
